@@ -33,9 +33,13 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-        {/* Profile Image Placeholder */}
-        <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-gold-400 to-amber-500 shadow-2xl flex items-center justify-center text-6xl font-bold text-white border-4 border-white/20">
-          TM
+        {/* Profile Image */}
+        <div className="w-48 h-48 mx-auto mb-8 rounded-full shadow-2xl border-4 border-white/20 overflow-hidden">
+          <img 
+            src="/lovable-uploads/179b2967-f99c-46db-97ba-c5a3a23930cd.png" 
+            alt="Thomas Ouko Mboya"
+            className="w-full h-full object-cover"
+          />
         </div>
         
         <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-gold-400 via-amber-300 to-yellow-400 bg-clip-text text-transparent animate-fade-in">

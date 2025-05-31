@@ -22,8 +22,12 @@ const About = () => {
           {/* Profile Section */}
           <div className="space-y-8">
             <div className="relative">
-              <div className="w-80 h-80 mx-auto lg:mx-0 rounded-2xl bg-gradient-to-br from-purple-600 to-blue-600 shadow-2xl flex items-center justify-center text-8xl font-bold text-white">
-                TM
+              <div className="w-80 h-80 mx-auto lg:mx-0 rounded-2xl shadow-2xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/179b2967-f99c-46db-97ba-c5a3a23930cd.png" 
+                  alt="Thomas Ouko Mboya"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
                 🎨
