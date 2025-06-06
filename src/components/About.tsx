@@ -8,6 +8,10 @@ const About = () => {
   const languages = ['English', 'Kiswahili', 'Luo', 'Gusii'];
   const interests = ['Poetry', 'Adventure', 'Wildlife Scrutiny', 'Digital Innovation'];
 
+  const handleDownloadCV = () => {
+    window.open('https://drive.google.com/file/d/1DgVQBghuroKSKaqoY1MM3jZIF5J22Yt1/view?usp=drive_link', '_blank');
+  };
+
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="container mx-auto px-6 max-w-7xl">
@@ -36,6 +40,7 @@ const About = () => {
 
             <div className="text-center lg:text-left">
               <Button 
+                onClick={handleDownloadCV}
                 size="lg"
                 className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
