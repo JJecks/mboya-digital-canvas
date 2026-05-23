@@ -23,29 +23,31 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Basic validation
-    if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Please fill in all fields",
-        description: "All fields are required to send your message.",
-        variant: "destructive"
-      });
-      return;
-    }
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
 
-    // Success message
+  if (!formData.name || !formData.email || !formData.message) {
     toast({
-      title: "Message sent successfully!",
-      description: "Thank you for your message. Thomas will get back to you soon.",
+      title: "Please fill in all fields",
+      description: "All fields are required to send your message.",
+      variant: "destructive"
     });
+    return;
+  }
 
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
-  };
+  const mailtoLink = `mailto:jeckstom777@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(
+    `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+  )}`;
 
+  window.open(mailtoLink, '_blank');
+
+  toast({
+    title: "Opening your email client...",
+    description: "Your message is ready to send. Just hit Send in your email app.",
+  });
+
+  setFormData({ name: '', email: '', message: '' });
+};
   const contactInfo = [
     {
       icon: MapPin,
