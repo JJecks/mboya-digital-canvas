@@ -1,10 +1,10 @@
-
 import React from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Portfolio from '../components/Portfolio';
 import Services from '../components/Services';
 import Experience from '../components/Experience';
+import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 
 const Index = () => {
@@ -15,6 +15,7 @@ const Index = () => {
       <Portfolio />
       <Services />
       <Experience />
+      <Skills />
       <Contact />
     </div>
   );
